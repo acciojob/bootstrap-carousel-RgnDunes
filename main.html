@@ -7,8 +7,53 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+Here's an example HTML code for creating a Bootstrap carousel with 5 slides and arrow icons for navigation:
+
+php
+Copy code
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="item active first-slide">
+      <img src="slide1.jpg" alt="Slide 1">
+    </div>
+
+    <div class="item second-slide">
+      <img src="slide2.jpg" alt="Slide 2">
+    </div>
+
+    <div class="item third-slide">
+      <img src="slide3.jpg" alt="Slide 3">
+    </div>
+
+    <div class="item fourth-slide">
+      <img src="slide4.jpg" alt="Slide 4">
+    </div>
+
+    <div class="item fifth-slide">
+      <img src="slide5.jpg" alt="Slide 5">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>    <script type="text/javascript" src="./script.js">
 </script>
 
 </body>
